@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personajes </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Lista de Superhéroes</h1>
+</header>
+    <input type="text" id="nuevoSuperheroe" placeholder="Nombre del superhéroe">
+    <input type="text" id="imagenSuperheroe" placeholder="Imagen">
+    <button onclick="agregarSuperheroe()">Agregar</button>
+
+    <div id="listaSuperheroes">
+        <!-- Ejemplo de superhéroe con imagen -->
+        <div class="superheroe">
+            <img src="img/batman.jpg" alt="Batman">
+            <p class="completed">Batman</p>
+            <button class="delete" "eliminarSuperheroe(this)"> X</button>
+        </div>
+        <!-- Otros superhéroes aquí -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

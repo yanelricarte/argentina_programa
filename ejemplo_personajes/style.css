@@ -1,0 +1,68 @@
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#listaSuperheroes {
+    list-style: none;
+    padding: 0;
+}
+
+.superheroe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#nuevoSuperheroe,
+#imagenSuperheroe {
+    width: 40%;
+    padding: 5px;
+}
+
+#nuevoSuperheroe {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+button.delete {
+    color: #ff3d00; 
+    background-color: transparent;
+}
+
+button.delete:hover {
+    color: #d83000; 
+    background-color: transparent;
+}
+
+.completed {
+    color: #4a4d4b;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilo para las imágenes de superhéroes */
+.superheroe img {
+    max-width: 100px;
+    height: auto;
+}
