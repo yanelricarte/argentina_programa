@@ -1,0 +1,10 @@
+.boton{
+    background-color: #007bff !important;
+    color: white;
+    padding: '10px, 20px';
+    border-radius: '5px';
+    cursor: 'pointer';
+}
+.boton:hover{
+    background-color: #0056;
+}
