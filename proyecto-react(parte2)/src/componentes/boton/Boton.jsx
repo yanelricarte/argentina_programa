@@ -11,7 +11,9 @@ function Boton(props){
     };
 
     return(
-        <button style={estilosBoton} onClick={props.onClick}> {props.texto}</button>
+        <div>
+        <button style={estilosBoton} onClick={props.onClick} className="boton"> {props.texto} </button>
+        </div>
 
         )
 
