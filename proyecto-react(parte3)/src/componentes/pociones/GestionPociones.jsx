@@ -1,20 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import ListaDePociones from './componentes/ListaDePociones';
-import FormularioDePociones from './componentes/FormularioDePociones';
+import { useState, useEffect } from 'react';
+import './Pociones.css'
+import ListaDePociones from './ListaDePociones';
+import FormularioDePociones from './FormularioDePociones';
 
 const GestionPociones = () => {
     // Estado para almacenar las pociones
     const [pociones, setPociones] = useState([]);
 
-    // Carga inicial de pociones desde el localStorage
+    // Carga inicial de pociones desde localStorage
     useEffect(() => {
-        const pocionesGuardadas = JSON.parse(localStorage.getItem('pociones'));
-        if (pocionesGuardadas) {
-        setPociones(pocionesGuardadas);
+        try {
+            const pocionesGuardadas = JSON.parse(localStorage.getItem('pociones'));
+            console.log('Pociones cargadas:', pocionesGuardadas);
+            if (pocionesGuardadas) {
+                setPociones(pocionesGuardadas);
+            }
+        } catch (error) {
+            console.error('Error al cargar datos desde localStorage:', error);
         }
     }, []);
 
-    // Almacena las pociones en el localStorage cuando cambia el estado
+    // Almacena las pociones en localStorage cuando cambia el estado
     useEffect(() => {
         localStorage.setItem('pociones', JSON.stringify(pociones));
     }, [pociones]);
@@ -44,8 +50,8 @@ const GestionPociones = () => {
     };
 
     return (
-        <div>
-        <h1>Gestión de Pociones en Hogwarts</h1>
+        <div className='contenedor-pociones'>
+        <h1 className='titulo'>Gestión de Pociones en Hogwarts</h1>
         {/* Lista de Pociones */}
         <ListaDePociones
             pociones={pociones}

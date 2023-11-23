@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const FormularioDePociones = ({ agregarPocion }) => {
-  const [nuevaPocion, setNuevaPocion] = useState('');
+    const [nuevaPocion, setNuevaPocion] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();

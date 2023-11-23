@@ -1,6 +1,7 @@
-import React from 'react';
 
 const Pocion = ({ pocion, completarPocion, eliminarPocion }) => {
+    
+    //Destruturación de Props 'pocion'
     const { id, nombre, completada } = pocion;
 
     const completar = () => {

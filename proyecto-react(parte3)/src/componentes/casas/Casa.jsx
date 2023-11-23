@@ -19,7 +19,7 @@ Casa.propTypes = {
     nombre: PropTypes.string.isRequired,
     valores: PropTypes.string,
     animal: PropTypes.string,
-    color: PropTypes.color,
+    color: PropTypes.string,
     director: PropTypes.string,
     ubicacion: PropTypes.string,
 
